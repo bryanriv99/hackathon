@@ -1,39 +1,18 @@
-# Python bytecode and test/tool caches
+# Archivos de datos pesados (superan límite de 100MB de GitHub)
+*.parquet
+*.rds
+Dataset Hackathon/*.parquet
+Dataset Hackathon/*.rds
+Dataset Hackathon/*.pkl
+
+# Python
 __pycache__/
 *.py[cod]
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
-
-# Local Python environments
+*.class
 .venv/
-.venv-*/
 venv/
 env/
 
-# Local editor and OS files
-.idea/
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Local secrets
-.env
-.env.*
-!.env.example
-.streamlit/secrets.toml
-
-# Generated or private datasets (keep dictionaries and documentation)
-/dataset_enriched.parquet
-/dataset_scores_final*.parquet
-/Dataset Hackathon/*.parquet
-/Dataset Hackathon/*.rds
-/Dataset Hackathon/*.pkl
-
-# Trained model binaries; keep JSON metadata and metrics
-# Keep generated binary artifacts out of Git history.
-/*.pkl
-/model_registry/*.pkl
-
+# Entornos y temporales
+.system_generated/
+*.log
