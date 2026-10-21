@@ -24,6 +24,26 @@ La app busca primero `dataset_scores_final_v2.parquet` y luego `dataset_enriched
 streamlit run app.py
 ```
 
+## Aplicación web final
+
+La interfaz Flask reúne el simulador Stuff+, Location+ y Pitching+, el recomendador situacional de lanzamientos, el análisis de altitud, el explorador del dataset y la validación de los modelos. Los datos de simulación y análisis se calculan con los modelos y artefactos de `model_registry/` y `plots/`.
+
+Para que también carguen el explorador, las referencias de movimiento y las alertas de extrapolación, coloca `dataset_scores_final_v2.parquet` junto a `server.py`. Si el dataset se sirve desde una URL, configura `DATASET_URL` antes de iniciar Flask:
+
+```powershell
+$env:DATASET_URL = "https://github.com/Dustin2603/Id-Hackathon/releases/download/dashboard-data-v1/dataset_scores_final_v2.parquet"
+python server.py
+```
+
+La interfaz web se sirve en:
+
+```powershell
+python train_situational.py   # solo la primera vez: genera model_registry/situational_*.{pkl,json}
+python server.py              # http://127.0.0.1:5000
+```
+
+Para recompilar los estilos (requiere Node): `cd web/build; npm install; node build.js`. Los estilos propios van en `web/build/pitcheo.scss`.
+
 ## Streamlit Community Cloud
 
 Configura la app para usar el repositorio `Dustin2603/Id-Hackathon` y la rama `deploy/streamlit-app`, con `app.py` como archivo principal. En **Settings > Secrets**, agrega la URL del asset del release:

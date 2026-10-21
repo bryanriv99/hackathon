@@ -1,0 +1,395 @@
+{
+  "features": [
+    "AutoPitchType_Num",
+    "RelSpeed",
+    "InducedVertBreak",
+    "HorzBreak",
+    "velo_diff_vs_fb",
+    "ivb_diff_vs_fb",
+    "hb_diff_vs_fb",
+    "PitcherThrows_Num",
+    "BatterSide_Num",
+    "PlateLocHeight",
+    "PlateLocSide",
+    "Balls",
+    "Strikes"
+  ],
+  "auc": {
+    "csw": 0.7882201683983499,
+    "inplay": 0.805081559843136,
+    "groundball": 0.6515062919372451,
+    "flyball": 0.6645048062324437
+  },
+  "n": {
+    "csw": 400000,
+    "inplay": 400000,
+    "groundball": 107595,
+    "flyball": 107595
+  },
+  "league": {
+    "csw": 0.2676422217534934,
+    "inplay": 0.1829348169129343,
+    "groundball": 0.46114596403178587,
+    "flyball": 0.31034899391235654,
+    "gb_pct": 0.46114596403178587,
+    "fb_pct": 0.31034899391235654,
+    "k_pct": 0.1860352933992795,
+    "bb_pct": 0.09593332112108445
+  },
+  "league_definitions": {
+    "csw": "tasa de StrikeCalled o StrikeSwinging sobre lanzamientos validos (PitchCall != Undefined)",
+    "inplay": "tasa de InPlay sobre lanzamientos validos (PitchCall != Undefined)",
+    "gb_pct": "proporcion de Angle < 10 entre lanzamientos InPlay con Angle no nulo",
+    "fb_pct": "proporcion de Angle >= 25 entre lanzamientos InPlay con Angle no nulo",
+    "k_pct": "Strikeout sobre PA; PA = KorBB != Undefined o PitchCall == InPlay o PitchCall == HitByPitch",
+    "bb_pct": "Walk sobre PA; misma definicion de PA que k_pct"
+  },
+  "defaults": {
+    "Right": {
+      "Four-Seam": {
+        "speed": 92.196,
+        "ivb": 14.99595,
+        "hb": 8.434080000000002,
+        "hidden": {
+          "SpinRate": 2337.7050105,
+          "SpinAxis": 211.31590599999998,
+          "RelHeight": 5.91552,
+          "RelSide": 1.5732,
+          "Extension": 6.0863949999999996,
+          "VertRelAngle": -1.770954,
+          "HorzRelAngle": -2.4780075,
+          "SpeedDrop": 7.00956,
+          "diff_effective_velo": -0.11749999999999972,
+          "diff_vert_break": -32.37929
+        }
+      },
+      "Sinker": {
+        "speed": 91.464685,
+        "ivb": 9.38843,
+        "hb": 13.928889999999999,
+        "hidden": {
+          "SpinRate": 2268.4462695,
+          "SpinAxis": 237.17603400000002,
+          "RelHeight": 5.558065,
+          "RelSide": 1.940435,
+          "Extension": 5.9269,
+          "VertRelAngle": -1.092721,
+          "HorzRelAngle": -3.0875304999999997,
+          "SpeedDrop": 6.96196,
+          "diff_effective_velo": -0.4057300000000055,
+          "diff_vert_break": -33.03649
+        }
+      },
+      "Cutter": {
+        "speed": 89.14055,
+        "ivb": 9.19658,
+        "hb": -0.47984,
+        "hidden": {
+          "SpinRate": 2460.774403,
+          "SpinAxis": 176.711918,
+          "RelHeight": 5.85995,
+          "RelSide": 1.72329,
+          "Extension": 5.83009,
+          "VertRelAngle": -1.316568,
+          "HorzRelAngle": -2.240518,
+          "SpeedDrop": 6.21656,
+          "diff_effective_velo": -0.2982599999999991,
+          "diff_vert_break": -34.75896
+        }
+      },
+      "Changeup": {
+        "speed": 83.9595,
+        "ivb": 6.156874999999999,
+        "hb": 11.62959,
+        "hidden": {
+          "SpinRate": 1770.0771829999999,
+          "SpinAxis": 246.26408400000003,
+          "RelHeight": 5.728505,
+          "RelSide": 1.72909,
+          "Extension": 5.882345,
+          "VertRelAngle": -0.959576,
+          "HorzRelAngle": -2.6430805,
+          "SpeedDrop": 6.131069999999999,
+          "diff_effective_velo": -0.4277499999999961,
+          "diff_vert_break": -39.23262
+        }
+      },
+      "Slider": {
+        "speed": 84.20179,
+        "ivb": 2.78266,
+        "hb": -3.40526,
+        "hidden": {
+          "SpinRate": 2446.9010385,
+          "SpinAxis": 117.942419,
+          "RelHeight": 5.7465,
+          "RelSide": 1.8263150000000001,
+          "Extension": 5.666535,
+          "VertRelAngle": -0.5744795,
+          "HorzRelAngle": -2.122677,
+          "SpeedDrop": 6.012485,
+          "diff_effective_velo": -0.7342700000000022,
+          "diff_vert_break": -39.37782
+        }
+      },
+      "Curveball": {
+        "speed": 78.617775,
+        "ivb": -7.4369499999999995,
+        "hb": -8.15101,
+        "hidden": {
+          "SpinRate": 2556.023162,
+          "SpinAxis": 42.3775065,
+          "RelHeight": 5.809265,
+          "RelSide": 1.735985,
+          "Extension": 5.531295,
+          "VertRelAngle": 0.7329535,
+          "HorzRelAngle": -1.4249135000000002,
+          "SpeedDrop": 5.5902449999999995,
+          "diff_effective_velo": -1.027390000000004,
+          "diff_vert_break": -45.464515
+        }
+      },
+      "Splitter": {
+        "speed": 83.45993999999999,
+        "ivb": 2.92933,
+        "hb": 5.86583,
+        "hidden": {
+          "SpinRate": 1096.0258764999999,
+          "SpinAxis": 249.98441150000002,
+          "RelHeight": 5.875865,
+          "RelSide": 1.750925,
+          "Extension": 5.84197,
+          "VertRelAngle": -0.8513695,
+          "HorzRelAngle": -2.3341325,
+          "SpeedDrop": 6.276275,
+          "diff_effective_velo": -0.6220050000000015,
+          "diff_vert_break": -39.995675000000006
+        }
+      }
+    },
+    "Left": {
+      "Four-Seam": {
+        "speed": 90.56286,
+        "ivb": 15.29489,
+        "hb": 8.28713,
+        "hidden": {
+          "SpinRate": 2301.471856,
+          "SpinAxis": 149.823531,
+          "RelHeight": 5.95927,
+          "RelSide": -1.55373,
+          "Extension": 5.91842,
+          "VertRelAngle": -1.742813,
+          "HorzRelAngle": 2.535568,
+          "SpeedDrop": 6.99611,
+          "diff_effective_velo": -0.4477899999999977,
+          "diff_vert_break": -33.70419
+        }
+      },
+      "Sinker": {
+        "speed": 90.21692,
+        "ivb": 9.99111,
+        "hb": 13.02741,
+        "hidden": {
+          "SpinRate": 2233.491126,
+          "SpinAxis": 125.872661,
+          "RelHeight": 5.6439,
+          "RelSide": -2.04398,
+          "Extension": 5.86509,
+          "VertRelAngle": -1.088339,
+          "HorzRelAngle": 3.168127,
+          "SpeedDrop": 6.81026,
+          "diff_effective_velo": -0.5231600000000043,
+          "diff_vert_break": -34.104980000000005
+        }
+      },
+      "Cutter": {
+        "speed": 87.67676,
+        "ivb": 9.45776,
+        "hb": 0.62421,
+        "hidden": {
+          "SpinRate": 2347.302158,
+          "SpinAxis": 175.772136,
+          "RelHeight": 5.9846,
+          "RelSide": -1.71903,
+          "Extension": 5.83776,
+          "VertRelAngle": -1.249635,
+          "HorzRelAngle": 2.250471,
+          "SpeedDrop": 6.06895,
+          "diff_effective_velo": -0.29739000000000715,
+          "diff_vert_break": -35.87967
+        }
+      },
+      "Changeup": {
+        "speed": 82.404615,
+        "ivb": 7.15109,
+        "hb": 11.957055,
+        "hidden": {
+          "SpinRate": 1861.5931719999999,
+          "SpinAxis": 117.04406900000001,
+          "RelHeight": 5.730855,
+          "RelSide": -1.856875,
+          "Extension": 5.7802050000000005,
+          "VertRelAngle": -0.753579,
+          "HorzRelAngle": 2.694397,
+          "SpeedDrop": 6.09699,
+          "diff_effective_velo": -0.6343149999999937,
+          "diff_vert_break": -41.013639999999995
+        }
+      },
+      "Slider": {
+        "speed": 82.665355,
+        "ivb": 2.4915950000000002,
+        "hb": -4.039415,
+        "hidden": {
+          "SpinRate": 2442.8925595,
+          "SpinAxis": 248.8131535,
+          "RelHeight": 5.77333,
+          "RelSide": -1.98594,
+          "Extension": 5.507095,
+          "VertRelAngle": -0.39019349999999997,
+          "HorzRelAngle": 2.0904815,
+          "SpeedDrop": 5.929575,
+          "diff_effective_velo": -1.020184999999998,
+          "diff_vert_break": -41.20577
+        }
+      },
+      "Curveball": {
+        "speed": 77.018365,
+        "ivb": -5.787245,
+        "hb": -8.00215,
+        "hidden": {
+          "SpinRate": 2563.2540179999996,
+          "SpinAxis": 311.91522150000003,
+          "RelHeight": 5.81977,
+          "RelSide": -1.7816,
+          "Extension": 5.342325000000001,
+          "VertRelAngle": 0.8520105,
+          "HorzRelAngle": 1.454844,
+          "SpeedDrop": 5.456045,
+          "diff_effective_velo": -1.2722849999999966,
+          "diff_vert_break": -47.797754999999995
+        }
+      },
+      "Splitter": {
+        "speed": 82.37872,
+        "ivb": 3.19083,
+        "hb": 11.16906,
+        "hidden": {
+          "SpinRate": 1058.150911,
+          "SpinAxis": 111.947468,
+          "RelHeight": 5.7829,
+          "RelSide": -1.75682,
+          "Extension": 5.49535,
+          "VertRelAngle": -0.673888,
+          "HorzRelAngle": 2.37792,
+          "SpeedDrop": 6.84106,
+          "diff_effective_velo": -1.5549800000000005,
+          "diff_vert_break": -42.54333
+        }
+      }
+    }
+  },
+  "ranges": {
+    "Four-Seam": {
+      "speed": [
+        85.529072,
+        97.5871284
+      ],
+      "ivb": [
+        8.138162,
+        23.039479199999995
+      ],
+      "hb": [
+        -0.3604607999999998,
+        16.29125319999999
+      ]
+    },
+    "Sinker": {
+      "speed": [
+        85.21446,
+        96.83386
+      ],
+      "ivb": [
+        -3.8076299999999996,
+        17.34214000000001
+      ],
+      "hb": [
+        6.537034,
+        21.516948
+      ]
+    },
+    "Cutter": {
+      "speed": [
+        83.2441112,
+        94.0523065
+      ],
+      "ivb": [
+        2.0208862,
+        18.92553
+      ],
+      "hb": [
+        -6.7897163,
+        11.639775499999997
+      ]
+    },
+    "Changeup": {
+      "speed": [
+        73.981754,
+        91.752434
+      ],
+      "ivb": [
+        -4.959911,
+        18.05162
+      ],
+      "hb": [
+        0.2269055000000002,
+        21.742296500000005
+      ]
+    },
+    "Slider": {
+      "speed": [
+        76.6433255,
+        90.23889799999999
+      ],
+      "ivb": [
+        -6.3479765,
+        11.899005499999973
+      ],
+      "hb": [
+        -18.1546985,
+        5.962694499999993
+      ]
+    },
+    "Curveball": {
+      "speed": [
+        67.5399085,
+        84.7820269
+      ],
+      "ivb": [
+        -19.364693300000003,
+        5.774141500000003
+      ],
+      "hb": [
+        -19.059063300000002,
+        7.51094660000001
+      ]
+    },
+    "Splitter": {
+      "speed": [
+        76.44780680000001,
+        91.6777722
+      ],
+      "ivb": [
+        -8.4072324,
+        19.2461926
+      ],
+      "hb": [
+        -3.4424544,
+        16.4678482
+      ]
+    }
+  },
+  "hb_sign": {
+    "Right": 1.0,
+    "Left": -1.0
+  }
+}
